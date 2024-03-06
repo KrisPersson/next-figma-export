@@ -1,0 +1,6 @@
+
+.header {
+    height: 6rem;
+    background: var(--c-primary-background);
+    color: var(--c-primary-title);
+}

@@ -1,3 +1,14 @@
+/* LAYOUT */
+
+
+.body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin: 0;
+}
+
+
 .main {
   display: flex;
   flex-direction: column;

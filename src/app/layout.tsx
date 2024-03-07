@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { archia } from "./fonts";
+
 import "./globals.css";
 import styles from "./page.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={styles.html}>
-      <body className={`${inter.className} ${styles.body}`}>{children}</body>
+      <body className={`${archia.className} antialiased ${styles.body}`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -9,6 +9,7 @@
 --_palette-orange-300: rgba(255, 157, 148, 1);
 --_palette-orange-500: rgba(255, 92, 76, 1);
 --_palette-orange-700: rgba(199, 17, 0, 1);
+--_palette-white: rgba(255, 255, 255, 1);
 
 /* Global variables */
 
@@ -20,6 +21,7 @@
 --c-secondary-default: var(--_palette-orange-500);
 --c-secondary-lighter: var(--_palette-orange-300);
 --c-secondary-subtle: var(--_palette-orange-100);
+--c-white: var(--_palette-white);
 
 /* Numbers */
 
@@ -40,7 +42,7 @@
 --_mq-button-v-padding-mobile: var(--scale-12);
 --_mq-button-v-padding-desktop: var(--scale-16);
 --_mq-button-h-padding-mobile: var(--scale-24);
---_mq-button-h-padding-desktop: 0px;
+--_mq-button-h-padding-desktop: var(--scale-16);
 --_mq-button-text-mobile: var(--scale-16);
 --_mq-button-text-desktop: var(--scale-20);
 --_mq-card-small-spacing-mobile: var(--scale-8);

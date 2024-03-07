@@ -1,0 +1,18 @@
+
+
+.button {
+    background: var(--c-secondary-default);
+    color: var(--c-white);
+    font-size: var(--button-text);
+    padding: var(--button-v-padding) var(--button-h-padding);
+    border: none;
+    margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+
+    .button {
+        width: 190px;
+        line-height: 2rem;
+    }
+}

@@ -22,7 +22,7 @@
 
 .header__navLink {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     color: var(--c-primary-title);
 }

@@ -4,6 +4,7 @@
     background: var(--c-secondary-default);
     color: var(--c-white);
     font-size: var(--button-text);
+    font-weight: 600;
     padding: var(--button-v-padding) var(--button-h-padding);
     border: none;
     margin-top: 1rem;

@@ -2,6 +2,7 @@
 
 .html {
   background: var(--c-primary-background);
+  box-sizing: border-box;
 }
 
 .body {

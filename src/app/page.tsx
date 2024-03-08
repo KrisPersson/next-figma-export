@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "./ui/header";
 import Hero from "./ui/hero";
 import SmallCardsContainer from "./ui/small-cards-container";
+import BigCard from "./ui/big-card";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <SmallCardsContainer />
+        <BigCard />
       </main>
     </>
   );

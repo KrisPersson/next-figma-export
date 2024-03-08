@@ -49,9 +49,8 @@
         flex-flow: row nowrap;
         max-width: 1392px;
         min-width: 1392px;
-
         height: 704px;
-
+        margin-bottom: 80px;
     }
 
     .infoSection {
@@ -65,7 +64,6 @@
     .imgSection {
         width: 50%;
         background-position: right;
-
     }
 
     .typeTitle {

@@ -4,6 +4,7 @@ import Header from "./ui/header";
 import Hero from "./ui/hero";
 import SmallCardsContainer from "./ui/small-cards-container";
 import BigCard from "./ui/big-card";
+import Footer from "./ui/footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <SmallCardsContainer />
         <BigCard />
       </main>
+      <Footer />
     </>
   );
 }

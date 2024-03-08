@@ -4,9 +4,20 @@
     background: var(--c-secondary-default);
     color: var(--c-white);
     font-size: var(--button-text);
+    font-weight: 600;
     padding: var(--button-v-padding) var(--button-h-padding);
     border: none;
     margin-top: 1rem;
+    transition: 100ms;
+}
+
+.button:hover {
+    box-shadow: 0px 2px 40px rgba(42, 42, 42, 0.1);
+    transition: 100ms;
+}
+.button:active {
+    background: var(--c-secondary-darker);
+    transition: 100ms;
 }
 
 @media (min-width: 800px) {

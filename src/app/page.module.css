@@ -2,6 +2,7 @@
 
 .html {
   background: var(--c-primary-background);
+  box-sizing: border-box;
 }
 
 .body {
@@ -12,6 +13,7 @@
   width: 100vw;
   max-width: 1600px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 

@@ -1,0 +1,30 @@
+
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 208px;
+    padding: var(--footer-v-padding) var(--footer-h-padding);
+    background: var(--c-primary-background);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    margin: 4px 0;
+}
+
+.copyrightText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--c-primary-caption);
+}
+
+@media (min-width: 800px) {
+    .footer {
+        height: 312px;
+    }
+}
+    

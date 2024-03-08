@@ -43,7 +43,7 @@ export default function Header() {
         </ul>
       </nav>
       <Image
-        src="/tripoint_logo.png"
+        src="/tripoint_logo.svg"
         width={86}
         height={24}
         alt="Tripoint logo"

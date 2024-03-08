@@ -13,6 +13,7 @@
   width: 100vw;
   max-width: 1600px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 

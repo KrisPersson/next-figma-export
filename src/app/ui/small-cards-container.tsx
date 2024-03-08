@@ -1,5 +1,6 @@
 import styles from "./small-cards-container.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 import { products } from "../products";
 
@@ -13,11 +14,24 @@ export default async function SmallCardsContainer() {
               <Image
                 src={product.productImgSrc}
                 alt={`Image of product named ${product.name}`}
-                width={241}
-                height={135}
+                fill={true}
+                className={styles.productImg}
               ></Image>
             </section>
-            <section className={styles.infoSection}></section>
+            <section className={styles.infoSection}>
+              <h3 className={styles.typeTitle}>{product.type}</h3>
+              <h2 className={styles.nameTitle}>{product.name}</h2>
+              <Image
+                src={product.featureDotImgSrc}
+                className={styles.circles}
+                width={126}
+                height={16}
+                alt="Product features"
+              ></Image>
+              <Link className={styles.shopNow} href="/">
+                Shop now
+              </Link>
+            </section>
           </article>
         );
       })}

@@ -8,7 +8,8 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background: var(--c-white);
+    justify-content: flex-start;
+    /* background: var(--c-white); */
     gap: var(--card-small-spacing);
     padding: 0 var(--footer-h-padding);
     overflow-x: scroll;

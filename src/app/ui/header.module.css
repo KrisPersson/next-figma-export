@@ -18,6 +18,9 @@
     left: var(--header-h-padding);
     top: 6rem;
     display: none;
+    z-index: 2;
+    background: var(--c-primary-background);
+
 }
 
 .header__navLink {
@@ -79,12 +82,6 @@
         left: var(--header-h-padding);
         display: block;
         top: unset;
-
-    }
-    .header__navUl {
-        width: 20rem;
-        gap: var(--header-h-padding);
-        flex-direction: row !important;
     }
     .header__navLink {
         font-size: 1rem;
@@ -94,5 +91,10 @@
     }
     .header ul {
         gap: 24px;
+    }
+    .header__navUl {
+        width: 20rem;
+        gap: 48px !important;
+        flex-direction: row !important;
     }
 }

@@ -1,0 +1,60 @@
+
+.hero {
+    box-sizing: border-box;
+    background-image: url("/hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 375px;
+    max-width: 400px;
+    height: 647px;
+    margin: 0 auto;
+    padding: var(--hero-v-padding) var(--hero-h-padding);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.productTitle {
+    font-size: 2rem;
+    color: var(--c-white-default);
+    margin: 0;
+    max-width: 100vw;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.productSubTitle {
+    font-size: 2rem;
+    color: var(--c-white-transparent-70);
+    opacity: 0.7;
+    margin: 0;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+@media (min-width: 800px) {
+
+    .hero {
+        background-image: url("/hero.png");
+        height: 832px;
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .productTitle {
+        font-size: 4rem;
+        color: var(--c-primary-title);
+        line-height: 72px;
+    }
+
+    .productSubTitle {
+        font-size: 4rem;
+        color: var(--c-primary-title);
+        opacity: 0.8;
+        margin: 0;
+        line-height: 72px;
+    }
+}

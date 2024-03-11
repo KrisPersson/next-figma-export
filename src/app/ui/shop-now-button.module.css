@@ -2,7 +2,7 @@
 
 .button {
     background: var(--c-secondary-default);
-    color: var(--c-white);
+    color: var(--c-white-default);
     font-size: var(--button-text);
     font-weight: 500;
     padding: var(--button-v-padding) var(--button-h-padding);

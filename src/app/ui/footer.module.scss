@@ -1,11 +1,10 @@
-@use "../globals" as *;
 
 .footer {
     box-sizing: border-box;
     width: 100%;
     min-height: 208px;
-    padding: $footer-v-padding $footer-h-padding;
-    background: $c-primary-background;
+    padding: var(--footer-v-padding) var(--footer-h-padding);
+    background: var(--c-primary-background);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -20,7 +19,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    color: $c-primary-caption;
+    color: var(--c-primary-caption);
 }
 
 @media (min-width: 800px) {

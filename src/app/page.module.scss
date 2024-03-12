@@ -1,8 +1,7 @@
 /* LAYOUT */
-@use "./globals" as *;
 
 .html {
-  background: $c-primary-background;
+  background: var(--c-primary-background);
   box-sizing: border-box;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .main {
-  background: $c-white-default;
+  background: var(--c-white-default);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

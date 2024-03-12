@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { archia } from "./fonts";
 
-import "./globals.css";
-import styles from "./page.module.css";
+import "./globals.scss";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",

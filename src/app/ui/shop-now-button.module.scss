@@ -1,11 +1,11 @@
-
+@use "../globals" as *;
 
 .button {
-    background: var(--c-secondary-default);
-    color: var(--c-white-default);
-    font-size: var(--button-text);
+    background: $c-secondary-default;
+    color: $c-white-default;
+    font-size: $button-text;
     font-weight: 500;
-    padding: var(--button-v-padding) var(--button-h-padding);
+    padding: $button-v-padding $button-h-padding;
     border: none;
     margin-top: 1rem;
     transition: 100ms;
@@ -16,7 +16,7 @@
     transition: 100ms;
 }
 .button:active {
-    background: var(--c-secondary-darker);
+    background: $c-secondary-darker;
     transition: 100ms;
 }
 

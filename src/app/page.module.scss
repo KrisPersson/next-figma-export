@@ -1,7 +1,8 @@
 /* LAYOUT */
+@use "./globals" as *;
 
 .html {
-  background: var(--c-primary-background);
+  background: $c-primary-background;
   box-sizing: border-box;
 }
 
@@ -17,20 +18,9 @@
 }
 
 .main {
-  background: var(--c-white-default);
+  background: $c-white-default;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-
-
-/* .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-} */
-
 

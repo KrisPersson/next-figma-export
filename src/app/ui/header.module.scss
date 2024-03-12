@@ -1,10 +1,11 @@
+@use "../globals" as *;
 
 .header {
     box-sizing: border-box;
     height: 6rem;
-    background: var(--c-primary-background);
-    color: var(--c-primary-title);
-    padding: var(--header-v-padding) var(--header-h-padding);
+    background: $c-primary-background;
+    color: $c-primary-title;
+    padding: $header-v-padding $header-h-padding;
 
     display: flex;
     flex-flow: row nowrap;
@@ -15,11 +16,11 @@
 
 .header__nav {
     position: absolute;
-    left: var(--header-h-padding);
+    left: $header-h-padding;
     top: 6rem;
     display: none;
     z-index: 2;
-    background: var(--c-primary-background);
+    background: $c-primary-background;
 
 }
 
@@ -27,11 +28,11 @@
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
-    color: var(--c-primary-title);
+    color: $c-primary-title;
 }
 
 .header__navLink:active {
-    color: var(--c-primary-subtitle);
+    color: $c-primary-subtitle;
 }
 
 
@@ -48,15 +49,15 @@
 
 .header__navUl {
     width: 20rem;
-    gap: var(--header-h-padding);
+    gap: $header-h-padding;
     flex-direction: column !important;
 }
 
 .header__iconLinks {
     min-width: fit-content;
     position: absolute;
-    right: var(--header-h-padding);
-    color: var(--c-primary-title);
+    right: $header-h-padding;
+    color: $c-primary-title;
 }
 
 .iconLinks__icon:hover {
@@ -79,7 +80,7 @@
     }
     .header__nav {
         position: absolute;
-        left: var(--header-h-padding);
+        left: $header-h-padding;
         display: block;
         top: unset;
     }

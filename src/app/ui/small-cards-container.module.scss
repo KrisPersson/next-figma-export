@@ -1,4 +1,4 @@
-
+@use "../globals" as *;
 
 .container {
 
@@ -10,8 +10,8 @@
     align-items: center;
     justify-content: flex-start;
     /* background: var(--c-white); */
-    gap: var(--card-small-spacing);
-    padding: 0 var(--footer-h-padding);
+    gap: $card-small-spacing;
+    padding: 0 $footer-h-padding;
     overflow-x: scroll;
 }
 
@@ -19,11 +19,11 @@
     box-sizing: border-box;
     min-height: 396px;
     min-width: 241px;
-    background: var(--c-primary-background);
+    background: $c-primary-background;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 33%;
-    padding: var(--card-small-padding);    
+    padding: $card-small-padding;    
 }
 
 .imageSection {
@@ -48,7 +48,7 @@
 .typeTitle {
     font-size: 14px;
     font-weight: 400;
-    color: var(--c-primary-caption);
+    color: $c-primary-caption;
     line-height: 24px;
     margin: 0;
 }
@@ -56,7 +56,7 @@
 .nameTitle {
     font-size: 18px;
     font-weight: 500;
-    color: var(--c-primary-default);
+    color: $c-primary-title;
     line-height: 24px;
     margin: 0 0 8px 0;
 }
@@ -67,7 +67,7 @@
 
 .shopNow {
     display: block;
-    color: var(--c-secondary-default);
+    color: $c-secondary-default;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -77,7 +77,7 @@
 }
 
 .shopNow:hover {
-    color: var(--c-secondary-darker);
+    color: $c-secondary-darker;
 }
 
 @media (min-width: 800px) {

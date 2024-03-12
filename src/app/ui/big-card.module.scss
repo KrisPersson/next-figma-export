@@ -1,3 +1,4 @@
+@use "../globals" as *;
 
 .bigCard {
     height: 603px;
@@ -18,18 +19,18 @@
 }
 
 .infoSection {
-    padding: var(--card-big-v-padding) var(--card-big-h-padding);
+    padding: $card-big-v-padding $card-big-h-padding;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    background: var(--c-primary-background);
+    background: $c-primary-background;
 }
 
 .typeTitle {
     font-size: 16px;
     font-weight: 400;
-    color: var(--c-primary-caption);
+    color: $c-primary-caption;
     line-height: 24px;
     margin: 0 0 4px 0;
 }
@@ -37,7 +38,7 @@
 .nameTitle {
     font-size: 24px;
     font-weight: 500;
-    color: var(--c-primary-default);
+    color: $c-primary-title;
     line-height: 32px;
     margin: 0;
 }

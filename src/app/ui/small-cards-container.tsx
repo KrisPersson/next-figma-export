@@ -1,4 +1,4 @@
-import styles from "./small-cards-container.module.css";
+import styles from "./small-cards-container.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 

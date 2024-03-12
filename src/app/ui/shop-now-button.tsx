@@ -1,4 +1,4 @@
-import styles from "./shop-now-button.module.css";
+import styles from "./shop-now-button.module.scss";
 import { archia } from "../fonts";
 
 export default async function ShopNowButton() {

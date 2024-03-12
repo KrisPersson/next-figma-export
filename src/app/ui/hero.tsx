@@ -1,4 +1,4 @@
-import styles from "./hero.module.css";
+import styles from "./hero.module.scss";
 import ShopNowButton from "./shop-now-button";
 
 export default async function Hero() {

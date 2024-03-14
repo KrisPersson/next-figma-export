@@ -73,11 +73,12 @@
     margin-top: 16px;
     text-decoration: none;
     width: fit-content;
+
+    &:hover {
+        color: var(--c-secondary-darker);
+    }
 }
 
-.shopNow:hover {
-    color: var(--c-secondary-darker);
-}
 
 @media (min-width: 800px) {
 

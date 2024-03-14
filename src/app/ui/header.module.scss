@@ -11,52 +11,50 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-}
 
-.header__nav {
-    position: absolute;
-    left: var(--header-h-padding);
-    top: 6rem;
-    display: none;
-    z-index: 2;
-    background: var(--c-primary-background);
+    &__nav {
+        position: absolute;
+        left: var(--header-h-padding);
+        top: 6rem;
+        display: none;
+        z-index: 2;
+        background: var(--c-primary-background);
+    }
 
-}
+    &__navLink {
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--c-primary-title);
 
-.header__navLink {
-    font-size: 2rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--c-primary-title);
-}
+        &:active {
+            color: var(--c-primary-subtitle);
+        }
+    }
 
-.header__navLink:active {
-    color: var(--c-primary-subtitle);
-}
-
-
-.header ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-
-    display: flex;
-    flex-flow: row nowrap;
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
     
-    gap: 24px 12px;
-}
+        display: flex;
+        flex-flow: row nowrap;
+        
+        gap: 24px 12px;
+    }
 
-.header__navUl {
-    width: 20rem;
-    gap: var(--header-h-padding);
-    flex-direction: column !important;
-}
+    &__navUl {
+        width: 20rem;
+        gap: var(--header-h-padding);
+        flex-direction: column !important;
+    }
 
-.header__iconLinks {
-    min-width: fit-content;
-    position: absolute;
-    right: var(--header-h-padding);
-    color: var(--c-primary-title);
+    &__iconLinks {
+        min-width: fit-content;
+        position: absolute;
+        right: var(--header-h-padding);
+        color: var(--c-primary-title);
+    }
 }
 
 .iconLinks__icon:hover {
@@ -76,25 +74,30 @@
 @media (min-width: 800px) {
     .header {
         justify-content: center;
+
+        &__nav {
+            position: absolute;
+            left: var(--header-h-padding);
+            display: block;
+            top: unset;
+        }
+
+        &__navLink {
+            font-size: 1rem;
+        }
+
+        &__navUl {
+            width: 20rem;
+            gap: 48px !important;
+            flex-direction: row !important;
+        }
+
+        ul {
+            gap: 24px;
+        }
     }
-    .header__nav {
-        position: absolute;
-        left: var(--header-h-padding);
-        display: block;
-        top: unset;
-    }
-    .header__navLink {
-        font-size: 1rem;
-    }
+
     .hamburgerMenuIcon {
         display: none;
-    }
-    .header ul {
-        gap: 24px;
-    }
-    .header__navUl {
-        width: 20rem;
-        gap: 48px !important;
-        flex-direction: row !important;
     }
 }

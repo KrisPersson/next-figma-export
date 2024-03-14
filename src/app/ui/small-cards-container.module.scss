@@ -1,5 +1,4 @@
 
-
 .container {
 
     width: 100%;
@@ -23,7 +22,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 33%;
-    padding: var(--card-small-padding);    
+    padding: var(--card-small-padding); 
 }
 
 .imageSection {
@@ -56,7 +55,7 @@
 .nameTitle {
     font-size: 18px;
     font-weight: 500;
-    color: var(--c-primary-default);
+    color: var(--c-primary-title);
     line-height: 24px;
     margin: 0 0 8px 0;
 }
@@ -74,11 +73,12 @@
     margin-top: 16px;
     text-decoration: none;
     width: fit-content;
+
+    &:hover {
+        color: var(--c-secondary-darker);
+    }
 }
 
-.shopNow:hover {
-    color: var(--c-secondary-darker);
-}
 
 @media (min-width: 800px) {
 

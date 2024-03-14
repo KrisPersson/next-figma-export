@@ -1,4 +1,4 @@
-import styles from "./big-card.module.css";
+import styles from "./big-card.module.scss";
 import ShopNowButton from "./shop-now-button";
 
 export default async function BigCard() {

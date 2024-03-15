@@ -11,28 +11,30 @@ export default async function SmallCardsContainer() {
         {products.map((product, i) => {
           return (
             <article key={i} className={styles.smallCard}>
-              <section className={styles.imageSection}>
+              <div className={styles.imageSection}>
                 <Image
                   src={product.productImgSrc}
                   alt={`Image of product named ${product.name}`}
                   fill={true}
                   className={styles.productImg}
                 ></Image>
-              </section>
-              <section className={styles.infoSection}>
-                <h3 className={styles.typeTitle}>{product.type}</h3>
-                <h2 className={styles.nameTitle}>{product.name}</h2>
-                <Image
-                  src={product.featureDotImgSrc}
-                  className={styles.circles}
-                  width={126}
-                  height={16}
-                  alt="Product features"
-                ></Image>
-                <Link className={styles.shopNow} href="/">
-                  Shop now
-                </Link>
-              </section>
+              </div>
+              <div className={styles.infoSection}>
+                <div className={styles.textContainer}>
+                  <div className={styles.typeTitle}>{product.type}</div>
+                  <div className={styles.nameTitle}>{product.name}</div>
+                  <Image
+                    src={product.featureDotImgSrc}
+                    className={styles.circles}
+                    width={126}
+                    height={16}
+                    alt="Product features"
+                  />
+                  <Link className={styles.shopNow} href="/">
+                    Shop now
+                  </Link>
+                </div>
+              </div>
             </article>
           );
         })}

@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1600px;
     height: 492px;
+
 }
 
 .container {
@@ -11,8 +12,10 @@
     justify-content: flex-start;
     /* background: var(--c-white); */
     gap: var(--card-small-spacing);
-    padding: 0 var(--footer-h-padding);
     overflow-x: scroll;
+    height: 100%;
+    padding: 0 var(--footer-h-padding);
+
 }
 
 .smallCard {
@@ -42,22 +45,31 @@
     grid-row: 2 / -1;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.textContainer {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    row-gap: 8px;
 }
 
 .typeTitle {
     font-size: 14px;
     font-weight: 400;
     color: var(--c-primary-caption);
-    line-height: 24px;
-    margin: 0;
+    // line-height: 20px;
 }
 
 .nameTitle {
     font-size: 18px;
     font-weight: 500;
     color: var(--c-primary-title);
-    line-height: 24px;
-    margin: 0 0 8px 0;
+    // line-height: 24px;
 }
 
 .circles {
@@ -69,10 +81,10 @@
     color: var(--c-secondary-default);
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    margin-top: 16px;
+    line-height: 150%;
     text-decoration: none;
     width: fit-content;
+    padding: 8px 0;
 
     &:hover {
         color: var(--c-secondary-darker);
@@ -83,35 +95,42 @@
 @media (min-width: 800px) {
 
     .productSection {
-
+        height: 783px;
+        min-width: 100%;
     }
 
     .container {
-        height: 783px;
-        overflow: hidden;
-        padding: 0;
-        justify-content: center;
+        height: 100%;;
+        overflow-x: scroll;
+        padding: 0 6.5%;
     }
 
     .smallCard {
         height: 623px;
         width: 448px;
+        min-width: 300px;
+
     }
 
     .typeTitle {
         font-size: 16px;
+
     }
     .nameTitle {
         font-size: 24px;
-        line-height: 32px;
 
     }
     .infoSection {
         justify-content: flex-end;
-        row-gap: 4px;
+        height: 100%;
+
+    }
+    .textContainer {
+        justify-content: space-between;
+        height: 140px;
+        row-gap: 8px;
     }
     .shopNow {
-        margin-top: 18px;
-        margin-bottom: 8px;
+        padding: 8px 0;
     }
 }

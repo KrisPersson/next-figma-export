@@ -2,7 +2,6 @@
     width: 100%;
     max-width: 1600px;
     height: 492px;
-
 }
 
 .container {
@@ -15,7 +14,6 @@
     overflow-x: scroll;
     height: 100%;
     padding: 0 var(--footer-h-padding);
-
 }
 
 .smallCard {
@@ -39,6 +37,7 @@
 
 .productImg {
     object-fit: contain;
+    object-position: center;
 }
 
 .infoSection {
@@ -47,6 +46,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     height: 100%;
+    position: relative;
 }
 
 .textContainer {
@@ -54,7 +54,7 @@
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     row-gap: 8px;
 }
 
@@ -84,13 +84,14 @@
     line-height: 150%;
     text-decoration: none;
     width: fit-content;
-    padding: 8px 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
     &:hover {
         color: var(--c-secondary-darker);
     }
 }
-
 
 @media (min-width: 800px) {
 
@@ -109,7 +110,6 @@
         height: 623px;
         width: 448px;
         min-width: 300px;
-
     }
 
     .typeTitle {
@@ -121,16 +121,13 @@
 
     }
     .infoSection {
-        justify-content: flex-end;
+        justify-content: center;
         height: 100%;
 
     }
     .textContainer {
-        justify-content: space-between;
-        height: 140px;
+        height: 96px;
         row-gap: 8px;
-    }
-    .shopNow {
-        padding: 8px 0;
+        justify-content: space-between;
     }
 }

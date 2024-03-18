@@ -30,10 +30,10 @@ export default async function SmallCardsContainer() {
                     height={16}
                     alt="Product features"
                   />
-                  <Link className={styles.shopNow} href="/">
-                    Shop now
-                  </Link>
                 </div>
+                <Link className={styles.shopNow} href="/">
+                  Shop now
+                </Link>
               </div>
             </article>
           );

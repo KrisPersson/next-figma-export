@@ -1,7 +1,6 @@
 .productSection {
     width: 100%;
     max-width: 1600px;
-    height: 492px;
 }
 
 .container {
@@ -96,12 +95,11 @@
 @media (min-width: 800px) {
 
     .productSection {
-        height: 783px;
         min-width: 100%;
     }
 
     .container {
-        height: 100%;;
+        height: 100%;
         overflow-x: scroll;
         padding: 0 6.5%;
     }

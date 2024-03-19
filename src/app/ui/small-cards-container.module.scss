@@ -8,10 +8,9 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
-    /* background: var(--c-white); */
+    height: 100%;
     gap: var(--card-small-spacing);
     overflow-x: scroll;
-    height: 100%;
     padding: 0 var(--footer-h-padding);
 }
 
@@ -61,14 +60,12 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--c-primary-caption);
-    // line-height: 20px;
 }
 
 .nameTitle {
     font-size: 18px;
     font-weight: 500;
     color: var(--c-primary-title);
-    // line-height: 24px;
 }
 
 .circles {
@@ -112,17 +109,17 @@
 
     .typeTitle {
         font-size: 16px;
-
     }
+
     .nameTitle {
         font-size: 24px;
-
     }
+
     .infoSection {
         justify-content: center;
         height: 100%;
-
     }
+
     .textContainer {
         height: 96px;
         row-gap: 8px;

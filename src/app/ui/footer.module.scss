@@ -6,7 +6,6 @@
     padding: var(--footer-v-padding) var(--footer-h-padding);
     background: var(--c-primary-background);
     display: flex;
-    
 }
 
 .footerContent {
@@ -24,21 +23,21 @@
 .copyrightText {
     font-size: 14px;
     font-weight: 400;
-    line-height: 16px;
     color: var(--c-primary-caption);
+    margin: 0;
 }
 
 @media (min-width: 800px) {
     .footer {
         height: 312px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         padding: var(--footer-v-padding) 0;
     }
     .footerContent {
         width: 87%;
         max-width: 1600px;
+        row-gap: 70px;
     }
-
 }
     

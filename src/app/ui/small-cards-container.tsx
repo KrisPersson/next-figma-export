@@ -20,7 +20,7 @@ export default async function SmallCardsContainer() {
                   alt={`Image of product named ${product.name}`}
                   fill={true}
                   className={styles.productImg}
-                ></Image>
+                />
               </div>
               <div
                 aria-label="Product card info-container"

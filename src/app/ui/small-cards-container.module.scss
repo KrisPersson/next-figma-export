@@ -1,3 +1,5 @@
+@import '../sass/functions.scss';
+
 .productSection {
     width: 100%;
     max-width: 1600px;
@@ -16,8 +18,8 @@
 
 .smallCard {
     box-sizing: border-box;
-    min-height: 396px;
-    min-width: 241px;
+    min-height: pxToRem(396);
+    min-width: pxToRem(241);
     background: var(--c-primary-background);
     display: grid;
     grid-template-columns: 100%;
@@ -53,17 +55,17 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    row-gap: 8px;
+    row-gap: pxToRem(8);
 }
 
 .typeTitle {
-    font-size: 14px;
+    font-size: pxToRem(14);
     font-weight: 400;
     color: var(--c-primary-caption);
 }
 
 .nameTitle {
-    font-size: 18px;
+    font-size: pxToRem(18);
     font-weight: 500;
     color: var(--c-primary-title);
 }
@@ -76,7 +78,7 @@
     display: block;
     color: var(--c-secondary-default);
     font-weight: 500;
-    font-size: 16px;
+    font-size: pxToRem(16);
     line-height: 150%;
     text-decoration: none;
     width: fit-content;
@@ -102,17 +104,17 @@
     }
 
     .smallCard {
-        height: 623px;
-        width: 448px;
-        min-width: 300px;
+        height: pxToRem(623);
+        width: pxToRem(448);
+        min-width: pxToRem(300);
     }
 
     .typeTitle {
-        font-size: 16px;
+        font-size: pxToRem(16);
     }
 
     .nameTitle {
-        font-size: 24px;
+        font-size: pxToRem(24);
     }
 
     .infoSection {
@@ -121,8 +123,8 @@
     }
 
     .textContainer {
-        height: 96px;
-        row-gap: 8px;
+        height: pxToRem(96);
+        row-gap: pxToRem(8);
         justify-content: space-between;
     }
 }

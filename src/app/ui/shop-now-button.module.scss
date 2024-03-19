@@ -1,4 +1,4 @@
-
+@import "../sass/functions.scss";
 
 .button {
     background: var(--c-secondary-default);
@@ -7,23 +7,21 @@
     font-weight: 500;
     padding: var(--button-v-padding) var(--button-h-padding);
     border: none;
-    margin-top: 1rem;
     transition: 100ms;
-}
 
-.button:hover {
-    box-shadow: 0px 2px 40px rgba(42, 42, 42, 0.1);
-    transition: 100ms;
-}
-.button:active {
-    background: var(--c-secondary-darker);
-    transition: 100ms;
+    &:hover {
+        box-shadow: 0px 2px 40px rgba(42, 42, 42, 0.1);
+        transition: 100ms;
+    }
+    &:active {
+        background: var(--c-secondary-darker);
+        transition: 100ms;
+    }
 }
 
 @media (min-width: 800px) {
-
     .button {
-        width: 190px;
-        line-height: 2rem;
+        width: pxToRem(190);
+        line-height: pxToRem(32);
     }
 }

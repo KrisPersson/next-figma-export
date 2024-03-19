@@ -1,0 +1,130 @@
+@import '../sass/functions.scss';
+
+.productSection {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: var(--card-small-spacing);
+    overflow-x: scroll;
+    padding: 0 var(--footer-h-padding);
+}
+
+.smallCard {
+    box-sizing: border-box;
+    min-height: pxToRem(396);
+    min-width: pxToRem(241);
+    background: var(--c-primary-background);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 33%;
+    padding: var(--card-small-padding); 
+}
+
+.imageSection {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.productImg {
+    object-fit: contain;
+    object-position: center;
+}
+
+.infoSection {
+    grid-row: 2 / -1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.textContainer {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    row-gap: pxToRem(8);
+}
+
+.typeTitle {
+    font-size: pxToRem(14);
+    font-weight: 400;
+    color: var(--c-primary-caption);
+}
+
+.nameTitle {
+    font-size: pxToRem(18);
+    font-weight: 500;
+    color: var(--c-primary-title);
+}
+
+.circles {
+    max-width: fit-content;
+}
+
+.shopNow {
+    display: block;
+    color: var(--c-secondary-default);
+    font-weight: 500;
+    font-size: pxToRem(16);
+    line-height: 150%;
+    text-decoration: none;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    &:hover {
+        color: var(--c-secondary-darker);
+    }
+}
+
+@media (min-width: 800px) {
+
+    .productSection {
+        min-width: 100%;
+    }
+
+    .container {
+        height: 100%;
+        overflow-x: scroll;
+        padding: 0 6.5%;
+    }
+
+    .smallCard {
+        height: pxToRem(623);
+        width: pxToRem(448);
+        min-width: pxToRem(300);
+    }
+
+    .typeTitle {
+        font-size: pxToRem(16);
+    }
+
+    .nameTitle {
+        font-size: pxToRem(24);
+    }
+
+    .infoSection {
+        justify-content: center;
+        height: 100%;
+    }
+
+    .textContainer {
+        height: pxToRem(96);
+        row-gap: pxToRem(8);
+        justify-content: space-between;
+    }
+}

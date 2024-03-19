@@ -1,0 +1,106 @@
+@import "../sass/functions.scss";
+
+.header {
+    box-sizing: border-box;
+    height: pxToRem(96);
+    background: var(--c-primary-background);
+    color: var(--c-primary-title);
+    padding: var(--header-v-padding) var(--header-h-padding);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    &__nav {
+        position: absolute;
+        left: var(--header-h-padding);
+        top: pxToRem(96);
+        display: none;
+        z-index: 2;
+        background: var(--c-primary-background);
+    }
+
+    &__navLink {
+        font-size: pxToRem(32);
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--c-primary-title);
+
+        &:active {
+            color: var(--c-primary-subtitle);
+        }
+    }
+
+    &__navUl {
+        width: pxToRem(320);
+        gap: var(--header-h-padding);
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        list-style: none;
+
+    }
+
+    &__iconLinks {
+        min-width: fit-content;
+        position: absolute;
+        right: var(--header-h-padding);
+        color: var(--c-primary-title);
+    }
+}
+
+.iconLinksList {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: pxToRem(24) pxToRem(12);
+}
+
+.iconLinks__icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.hamburgerMenuIcon {
+    display: block;
+}
+
+.displayBlock {
+    display: block;
+}
+
+
+@media (min-width: 800px) {
+    .header {
+        justify-content: center;
+
+        &__nav {
+            position: absolute;
+            left: var(--header-h-padding);
+            display: block;
+            top: unset;
+        }
+
+        &__navLink {
+            font-size: pxToRem(16);
+        }
+
+        &__navUl {
+            width: pxToRem(320);
+            gap: pxToRem(48) !important;
+            flex-direction: row !important;
+        }
+    }
+
+    .iconLinksList {
+        gap: pxToRem(24);
+    }
+
+    .hamburgerMenuIcon {
+        display: none;
+    }
+}

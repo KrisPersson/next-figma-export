@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -48,9 +48,9 @@ export default function Header() {
         height={24}
         alt="Tripoint logo"
       />
-      <section className={styles.header__iconLinks}>
-        <ul>
-          <li>
+      <section aria-label="Icon links" className={styles.header__iconLinks}>
+        <ul className={styles.iconLinksList}>
+          <li className={styles.iconLinksList__item}>
             <Link href="/">
               <Image
                 src="/search.svg"
@@ -61,7 +61,7 @@ export default function Header() {
               />
             </Link>
           </li>
-          <li>
+          <li className={styles.iconLinksList__item}>
             <Link href="/">
               <Image
                 src="/shopping-bag.svg"
@@ -74,7 +74,7 @@ export default function Header() {
           </li>
           <li
             onClick={() => setShowHamburgerMenu((prev) => !prev)}
-            className={styles.hamburgerMenuIcon}
+            className={`${styles.hamburgerMenuIcon} ${styles.iconLinksList__item}`}
           >
             <Image
               src="/menu.svg"

@@ -1,3 +1,4 @@
+@import "../sass/functions.scss";
 
 .button {
     background: var(--c-secondary-default);
@@ -6,7 +7,6 @@
     font-weight: 500;
     padding: var(--button-v-padding) var(--button-h-padding);
     border: none;
-    margin-top: 1rem;
     transition: 100ms;
 
     &:hover {
@@ -20,9 +20,8 @@
 }
 
 @media (min-width: 800px) {
-
     .button {
-        width: 190px;
-        line-height: 2rem;
+        width: pxToRem(190);
+        line-height: pxToRem(32);
     }
 }

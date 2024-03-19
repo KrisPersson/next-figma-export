@@ -1,76 +1,99 @@
+@import "../sass/functions.scss";
 
 .bigCard {
-    height: 603px;
+    height: calc(pxToRem(224) + 100vw);
     width: 100%;
-    max-width: 400px;
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 48px;
+    position: relative;
+    justify-content: flex-start;
 }
 
 .imgSection {
-    background-image: url('/portrait.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    min-height: 100vw;
+    position: relative;
+}
+
+.image {
+    object-position: top;
+    object-fit: cover;
 }
 
 .infoSection {
-    padding: var(--card-big-v-padding) var(--card-big-h-padding);
+    box-sizing: border-box;
+    height: pxToRem(224);
+    width: 100%;
+    padding-top: var(--card-big-v-padding);
+    padding-bottom: var(--card-big-v-padding);
+    padding-left: var(--card-big-h-padding);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
     background: var(--c-primary-background);
+    position: relative;
 }
 
 .typeTitle {
-    font-size: 16px;
+    font-size: pxToRem(16);
     font-weight: 400;
     color: var(--c-primary-caption);
-    line-height: 24px;
-    margin: 0 0 4px 0;
+    line-height: pxToRem(24);
 }
 
 .nameTitle {
-    font-size: 24px;
+    font-size: pxToRem(24);
     font-weight: 500;
     color: var(--c-primary-title);
-    line-height: 32px;
-    margin: 0;
+    line-height: pxToRem(32);
 }
 
 @media (min-width: 800px) {
 
     .bigCard {
         flex-flow: row nowrap;
-        max-width: 1392px;
-        min-width: 1392px;
-        height: 704px;
-        margin-bottom: 80px;
+        width: 87%;
+        justify-content: center;
+        height: calc(87vw / 2);
+        min-height: pxToRem(350);
+        max-height: pxToRem(704);
     }
 
     .infoSection {
-        box-sizing: border-box;
         justify-content: center;
         align-items: flex-start;
         width: 50%;
         max-width: 50%;
+        height: 100%;
+        padding-left: 9.33%;
+        row-gap: pxToRem(32);
     }
 
     .imgSection {
         width: 50%;
+        height: 100%;
+        min-height: unset;
         background-position: right;
     }
 
     .typeTitle {
-        font-size: 18px;
-        line-height: 32px;
+        font-size: pxToRem(18);
+        line-height: pxToRem(32);
+    }
+
+    .nameTitle {
+        font-size: pxToRem(40);
+        line-height: pxToRem(48);
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .infoSection {
+        padding-left: 8.13%;
     }
     .nameTitle {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: pxToRem(28);
+        line-height: pxToRem(32);
     }
 }

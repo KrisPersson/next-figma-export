@@ -1,60 +1,100 @@
-
+@import "../sass/functions.scss";
 .hero {
     box-sizing: border-box;
-    background-image: url("/hero-mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 375px;
-    max-width: 400px;
-    height: 647px;
+    min-width: pxToRem(375);
+    width: 100%;
+    max-width: 100%;
+    height: pxToRem(647);
     margin: 0 auto;
-    padding: var(--hero-v-padding) var(--hero-h-padding);
-
+    padding-bottom: var(--hero-v-padding);
+    padding-left: var(--hero-h-padding);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: flex-start;
     position: relative;
+
+    &__content {
+        height: pxToRem(144);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    &__textContainer {
+        width: fit-content;
+        height: auto;
+    }
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
 }
 
 .productTitle {
-    font-size: 2rem;
+    font-size: pxToRem(32);
     color: var(--c-white-default);
     margin: 0;
-    max-width: 100vw;
     font-weight: 600;
-    line-height: 40px;
+    line-height: pxToRem(40);
+    white-space: nowrap;
 }
 
 .productSubTitle {
-    font-size: 2rem;
+    font-size: pxToRem(32);
     color: var(--c-white-transparent-70);
-    opacity: 0.7;
     margin: 0;
     font-weight: 600;
-    line-height: 40px;
+    line-height: pxToRem(40);
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+    .productSubTitle {
+        color: var(--c-primary-subtitle);
+    }
+}
+
+@media (min-width: 675px) and (max-width: 799px) {
+    .productTitle {
+        color: var(--c-primary-title);
+    }
 }
 
 @media (min-width: 800px) {
 
     .hero {
-        background-image: url("/hero.png");
-        height: 832px;
+        height: pxToRem(832);
         justify-content: center;
-        min-width: 100%;
+        padding-left: 13%;
+
+        &__content {
+            height: pxToRem(232);
+        }
+    }
+
+    .image {
+        object-position: top;
     }
 
     .productTitle {
-        font-size: 4rem;
+        font-size: pxToRem(64);
         color: var(--c-primary-title);
-        line-height: 72px;
+        line-height: pxToRem(72);
     }
 
     .productSubTitle {
-        font-size: 4rem;
+        font-size: pxToRem(64);
         color: var(--c-primary-title);
         opacity: 0.8;
         margin: 0;
-        line-height: 72px;
+        line-height: pxToRem(72);
     }
 }

@@ -26,6 +26,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav
+        aria-label="Primary"
         className={`${styles.header__nav} ${
           showHamburgerMenu && styles.displayBlock
         }`}
@@ -48,15 +49,15 @@ export default function Header() {
         height={24}
         alt="Tripoint logo"
       />
-      <section aria-label="Icon links" className={styles.header__iconLinks}>
+      <nav aria-label="Secondary" className={styles.header__iconLinks}>
         <ul className={styles.iconLinksList}>
           <li className={styles.iconLinksList__item}>
-            <Link href="/">
+            <Link href="/" aria-labelledby="">
               <Image
                 src="/search.svg"
                 width={24}
                 height={24}
-                alt="Search Icon"
+                alt="Search"
                 className={styles.iconLinks__icon}
               />
             </Link>
@@ -67,7 +68,7 @@ export default function Header() {
                 src="/shopping-bag.svg"
                 width={24}
                 height={24}
-                alt="Shopping Bag Icon"
+                alt="Shopping Bag"
                 className={styles.iconLinks__icon}
               />
             </Link>
@@ -85,7 +86,7 @@ export default function Header() {
             />
           </li>
         </ul>
-      </section>
+      </nav>
     </header>
   );
 }

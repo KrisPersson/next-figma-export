@@ -18,7 +18,7 @@ export default function Footer() {
             src="/tripoint_logo.svg"
             width={84}
             height={23.54}
-            alt="Tripoint Logo text"
+            alt="Tripoint text-logo"
           />
         </div>
         <p className={styles.copyrightText}>© 2023 Tripoint AB</p>

@@ -6,15 +6,12 @@ import { products } from "../products";
 
 export default async function SmallCardsContainer() {
   return (
-    <section className={styles.productSection}>
+    <section aria-label="Product cards" className={styles.productSection}>
       <div className={styles.container}>
         {products.map((product, i) => {
           return (
-            <article key={i} className={styles.smallCard}>
-              <div
-                aria-label="Product card image-container"
-                className={styles.imageSection}
-              >
+            <article aria-label="Product" key={i} className={styles.smallCard}>
+              <div className={styles.imageSection}>
                 <Image
                   src={product.productImgSrc}
                   alt={`Image of product named ${product.name}`}
@@ -22,10 +19,7 @@ export default async function SmallCardsContainer() {
                   className={styles.productImg}
                 />
               </div>
-              <div
-                aria-label="Product card info-container"
-                className={styles.infoSection}
-              >
+              <div className={styles.infoSection}>
                 <div className={styles.textContainer}>
                   <div className={styles.typeTitle}>{product.type}</div>
                   <div className={styles.nameTitle}>{product.name}</div>

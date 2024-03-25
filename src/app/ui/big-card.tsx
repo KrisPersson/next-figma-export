@@ -4,11 +4,8 @@ import Image from "next/image";
 
 export default async function BigCard() {
   return (
-    <article className={styles.bigCard}>
-      <div
-        aria-label="Product card Image container"
-        className={styles.imgSection}
-      >
+    <article className={styles.bigCard} aria-label="Product card">
+      <div className={styles.imgSection}>
         <Image
           src="/portrait.png"
           fill
@@ -17,10 +14,7 @@ export default async function BigCard() {
           alt={`Image of product named '002 Jong Song Peak'`}
         />
       </div>
-      <div
-        aria-label="Product card info container"
-        className={styles.infoSection}
-      >
+      <div className={styles.infoSection}>
         <div className={styles.textContainer}>
           <div className={styles.typeTitle}>Free & Strong</div>
           <div className={styles.nameTitle}>
